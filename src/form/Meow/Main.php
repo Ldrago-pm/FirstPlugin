@@ -1,6 +1,6 @@
 <?php
 
-namespace Form\Meow;
+namespace form\Meow;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\events\Listener;

@@ -1,8 +1,8 @@
 name: SkyBlockMenuUI
-author: Ehan
+author: Ehan,Ldrago
 api: 4.0.0
 version: 1.0.1
-main: Form\Meow\Main
+main: form\Meow\Main
 
 commands:
   sbmu:

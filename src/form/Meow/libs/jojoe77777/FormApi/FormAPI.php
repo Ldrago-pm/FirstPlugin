@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Form\Meow\libs\jojoe77777\FormAPI;
+namespace form\Meow\libs\jojoe77777\FormAPI;
 
 use pocketmine\plugin\PluginBase;
 

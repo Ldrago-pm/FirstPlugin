@@ -1,24 +1,36 @@
 <?php 
 
+declare(strict_types=1); 
+
 namespace FirstPlugin\XenialEmperus;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\events\Listener;
 use pocketmine\player\Player;
 use pocketmine\server;
+use pocketmine\item\ItemFactory;
 
 use pocketmine\command\Commamd;
 use pocketmine\command\CommandSender;
 
-use FirstPlugin\XenialEmperus\libs\jojoe77777\FormAPI\SimpleForm;
+use pocketmine\event\player\PlayerJoinEvent;
+use pocketmine\event\player\PlayerInteractEvent;
+use pocketmine\event\inventory\InventoryTransactionEvent;
+use pocketmine\event\player\PlayerDropItemEvent;
+
+use jojoe77777\FormAPI\SimpleForm;
+use jojoe77777\FormAPI\CustomForm;
+ 
 class Main extends PluginBase 
 {
   
  public function onEnable(): void {
+ $this->getLogger()->info("plugin test by rishi enabled successfully");
  @mkdir($this->getDataFolder());
  $this->saveDefaultConfig();
  $this->getResource("Config.yml");
-   } 
+ $this->getServer()->getPluginManager()->registerEvents($this, $this);
+    } 
   
  public function onCommand(CommandSender $sender, Command $command, string $label , array $args): bool {    
  

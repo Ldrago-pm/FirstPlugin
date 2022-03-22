@@ -1,1 +1,16 @@
+name: FirstPlugin
+version: 1.0
+author: XenialEmperus
+api: 4.0.0 
+main: FirstPlugin\XenialEmperus\Main
 
+ commands:
+   Test: 
+    description: "for test" 
+    usage:  "/Test"
+    permission: Test.use.cmd
+    
+ permissions:
+  Test.use.cmd:
+   description: "Permission To use cmd"
+   default: true 

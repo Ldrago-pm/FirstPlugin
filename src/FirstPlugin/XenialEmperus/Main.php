@@ -67,7 +67,9 @@ class Main extends PluginBase
        
 });   
 $form->setTitle("SkyBlock Menu");
-$form->setContent("Your SkyBlock Menu!");
-  
+$form->setContent("Your SkyBlock Menu!"
+$form->addButton("Your Profile\nClick To View", "0", "textures/ui/icon_steve");  
+$form->addButton("Fast Travel\nClick TO Open Menu", "0", "textures/ui/icon_bookshelf");
+$form->addButton("Bank\nClick To Open Bank", "0", "textures/ui/absorption_heart");
             
             

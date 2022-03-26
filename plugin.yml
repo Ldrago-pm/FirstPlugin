@@ -2,7 +2,7 @@ name: FirstPlugin
 version: 1.0
 author: XenialEmperus
 api: 4.0.0 
-main: FirstPlugin\XenialEmperus\Main
+main: FirstPlugin\Xenialemperus\Main
 
  commands:
    Test: 
